@@ -79,6 +79,6 @@ COMMIT
 # NAT table rules
 *nat
 :POSTROUTING ACCEPT [0:0]
--A POSTROUTING -s 10.10.10.0/24 -o ens3 -j MASQUERADE
+-A POSTROUTING -s 10.10.10.0/24 -o eth0 -j MASQUERADE
 # End each table with the 'COMMIT' line or these rules won't be processed
 COMMIT
